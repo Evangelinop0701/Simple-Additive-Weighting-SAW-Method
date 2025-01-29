@@ -1,0 +1,23 @@
+.navbar{
+    background-color: #2626a3;
+    text-transform: uppercase;
+    font-size: 12px;
+    
+}
+.dropdown-menu,.dropdown-item{
+    font-size: 12px;
+}
+*{
+    font-family: Arial;
+}
+.breadcrumb{
+    background-color: rgb(235, 172, 121);
+    font-size: 14px;
+    color: white;
+
+}
+#card-head{
+    background-color: #8989c9;
+    /* background-color: #c3e0f7; */
+    color: white;
+}

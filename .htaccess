@@ -1,0 +1,39 @@
+RewriteEngine On
+
+RewriteRule ^index.html$ media.php [L]
+RewriteRule ^rezultadu.html$ media.php?modul=rezultadu&act=read [L]
+
+RewriteRule ^kasu.html$ media.php?modul=kasu&act=read [L]
+RewriteRule ^input-kasu.html$ media.php?modul=kasu&act=input [L]
+RewriteRule ^edit-kasu-(.*)\.html$ media.php?modul=kasu&act=edit&id=$1 [L]
+RewriteRule ^dadus-pessoa-(.*)\.html$ media.php?modul=pessoa&act=read&id=$1 [L]
+RewriteRule ^input-pessoa-(.*)\.html$ media.php?modul=pessoa&act=input&id=$1 [L]
+RewriteRule ^edit-pessoa-(.*)\-kasu-(.*)\.html$ media.php?modul=pessoa&act=edit&id_pessoa=$1&id=$1 [L]
+
+RewriteRule ^kriteiro.html$ media.php?modul=kriteiro&act=read [L]
+RewriteRule ^registu-kriteiro-(.*)\.html$ media.php?modul=kriteiro&act=input&id=$1 [L]
+
+RewriteRule ^input-kriteiro.html$ media.php?modul=kriteiro&act=input [L]
+RewriteRule ^edit-kriteria-(.*)\.html$ media.php?modul=kriteiro&act=update&id=$1 [L]
+
+RewriteRule ^regis-input.html$ media.php?modul=kriteiro&act=registu_krt [L]
+RewriteRule ^regis-update-(.*)\.html$ media.php?modul=kriteiro&act=update_res&id=$1 [L]
+
+RewriteRule ^alternativu.html$ media.php?modul=alternativu&act=read [L]
+RewriteRule ^input-alternativu.html$ media.php?modul=alternativu&act=input [L]
+RewriteRule ^update-alternativu-(.*)\.html$ media.php?modul=alternativu&act=update&id=$1 [L]
+
+RewriteRule ^detallo-krt-(.*)\-knadidatu-(.*)\.html$ media.php?modul=alternativu&act=detallo_krt&id=$1&id_pessoa=$2 [L]
+RewriteRule ^input-detallo-(.*)\-pessoa-(.*)\.html$ media.php?modul=alternativu&act=detallo_input&id=$1&id_pessoa=$2 [L]
+RewriteRule ^update-detallo-(.*)\-pessoa-(.*)\.html$ media.php?modul=alternativu&act=update_detallu&id=$1&id_pessoa=$2 [L]
+
+RewriteRule ^preferensia.html$ media.php?modul=preferensia&act=read [L]
+RewriteRule ^input-preferensia.html$ media.php?modul=preferensia&act=input_pre [L]
+RewriteRule ^update-preferensia-(.*)\.html$ media.php?modul=preferensia&act=update_prefe&id_pre=$1 [L]
+
+RewriteRule ^input-valor-pre.html$ media.php?modul=preferensia&act=input_valor_pre [L]
+RewriteRule ^update-valor-pre-(.*)\.html$ media.php?modul=preferensia&act=update_valor_pre&id_valor=$1 [L]
+
+
+RewriteRule ^input-subkriteria-(.*)\.html$ media.php?modul=kriteiro&act=input_sub&id=$1 [L]
+RewriteRule ^update-subkriteria-(.*)\.html$ media.php?modul=kriteiro&act=update_sub&id_sub=$1 [L]
